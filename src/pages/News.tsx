@@ -10,7 +10,7 @@ const News = () => {
       summary: "Outstanding performance at the Elkasico Tournament in Vosloorus showcases the exceptional talent of our township stars.",
       fullStory: "In a thrilling display of skill and determination, Duku Duku emerged as the standout performer at the prestigious Elkasico Tournament held in Vosloorus. His exceptional ball control, strategic playmaking, and leadership on the field earned him the coveted African Kasie Ballon D'Or Man of the Match award. The tournament, which featured some of the best township talent from across the region, provided the perfect platform for Duku Duku to showcase why he represents the future of South African football. His performance included two crucial assists and a spectacular goal that left spectators in awe. This recognition further solidifies our mission to elevate township football talent to professional levels.",
       image: "/duku1.jpeg",
-      date: "March 15, 2024",
+   
       category: "Awards"
     },
     {
@@ -19,7 +19,7 @@ const News = () => {
       summary: "Our founders were present at the prestigious Elkasico Tournament, supporting our players and celebrating township football excellence.",
       fullStory: "Founders Bandile Nkwanyana (Barker) and Khulekani Xaba made their presence felt at the Elkasico Tournament, demonstrating their unwavering commitment to supporting township football talent. Their attendance at this prestigious event underscores the organization's dedication to being present at every level of the game. During the tournament, they engaged with players, coaches, and other stakeholders, discussing opportunities for talent development and professional pathways. The founders also took time to scout emerging talent and identify potential candidates for future Kasie Ballon D'Or recognition. Their hands-on approach and genuine passion for the game continue to inspire players and reinforce the organization's core values of excellence and community support.",
       image: "/barka.jpeg",
-      date: "March 10, 2024",
+  
       category: "Events"
     },
     {
@@ -28,7 +28,7 @@ const News = () => {
       summary: "Celebrating the best of township football with our annual awards ceremony, recognizing outstanding talent and dedication across all categories.",
       fullStory: "The Annual Kasie Ballon D'Or Awards 2022-2023 was a spectacular celebration of township football excellence. The ceremony, attended by players, families, and community leaders, recognized outstanding achievements across multiple categories including Best Player, Best Young Talent, Best Coach, and Community Impact Award. Winners were selected based on their performance, leadership qualities, and contribution to their communities. The event featured inspiring speeches from our founders, highlighting success stories of players who have progressed to higher levels of competition. The ceremony also served as a networking opportunity, connecting talented players with scouts and coaches from professional clubs. This annual tradition continues to motivate players to strive for excellence while maintaining their connection to their township roots.",
       image: "/african kasie.jpeg",
-      date: "December 20, 2023",
+  
       category: "Awards"
     },
     {
@@ -37,7 +37,7 @@ const News = () => {
       summary: "Our prestigious medals continue to recognize outstanding individual performances and celebrate the excellence of township football talent.",
       fullStory: "The African Kasie Ballon D'Or Man of the Match Medal has become a symbol of excellence in township football. These beautifully crafted medals, featuring our distinctive logo and colors, are awarded to players who demonstrate exceptional skill, leadership, and sportsmanship during tournaments and matches. Each medal represents not just individual achievement, but also the collective pride of our communities. The recipients of these medals join an elite group of township football stars who have shown that talent knows no boundaries. Our medal program has inspired countless young players to pursue their dreams and has helped bridge the gap between grassroots football and professional opportunities. The recognition that comes with receiving one of these medals often opens doors to further development and career advancement in football.",
       image: "/medal.jpeg",
-      date: "November 5, 2023",
+
       category: "Awards"
     }
   ]
