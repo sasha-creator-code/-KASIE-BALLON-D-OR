@@ -111,7 +111,7 @@ const Home = () => {
             <div className="card group hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-3">
               <div className="overflow-hidden">
                 <img 
-                  src="/duku.jpeg"
+                  src="/duku1.jpeg"
                   alt="Elkasico Tournament Success"
                   className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-700"
                 />
