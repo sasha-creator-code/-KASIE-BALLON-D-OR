@@ -1,10 +1,10 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 
 const Gallery = () => {
-  const [selectedImage, setSelectedImage] = useState<number | null>(null)
+  const [selectedImage, setSelectedImage] = useState<string | null>(null)
 
-  const openModal = (imageId: number) => {
-    setSelectedImage(imageId)
+  const openModal = (imageUrl: string) => {
+    setSelectedImage(imageUrl)
   }
 
   const closeModal = () => {
@@ -17,9 +17,7 @@ const Gallery = () => {
       <section className="bg-primary text-white section-padding">
         <div className="container-max">
           <div className="text-center animate-fade-in-up">
-            <h1 className="text-5xl md:text-6xl font-heading font-bold mb-6">
-              Gallery
-            </h1>
+            <h1 className="text-5xl md:text-6xl font-heading font-bold mb-6">Gallery</h1>
             <p className="text-xl text-gold max-w-3xl mx-auto">
               Capturing the memorable moments of our journey in township football excellence
             </p>
@@ -27,89 +25,73 @@ const Gallery = () => {
         </div>
       </section>
 
-      {/* Gallery Section – Manually Organized by Category */}
+      {/* Gallery Section */}
       <section className="section-padding bg-gray-50">
-        <div className="container-max">
-
-          {/* Tournament */}
-          <div className="mb-12">
-           
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-              <img
-                src="gallery1.jpeg"
-                alt="Tournament 1"
-                style={{ width: '100%', height: '260px', objectFit: 'cover' }}
-                className="rounded-xl shadow-md hover:scale-105 transition-transform duration-500 cursor-pointer"
-              />
-              <img
-                src="/gallery2.jpeg"
-                alt="Tournament 2"
-                style={{ width: '100%', height: '260px', objectFit: 'cover' }}
-                className="rounded-xl shadow-md hover:scale-105 transition-transform duration-500 cursor-pointer"
-              />
-               <img
-                src="/gallery9.jpeg"
-                alt="Events 2"
-                style={{ width: '100%', height: '260px', objectFit: 'cover' }}
-                className="rounded-xl shadow-md hover:scale-105 transition-transform duration-500 cursor-pointer"
-              />
-               <img
-                src="/african kasie.jpeg"
-                alt="Events 2"
-                style={{ width: '100%', height: '260px', objectFit: 'cover' }}
-                className="rounded-xl shadow-md hover:scale-105 transition-transform duration-500 cursor-pointer"
-              />
+        <div className="container-max space-y-12">
+          {/* Images Array */}
+          {[
+            {
+              title: 'Tournament',
+              images: [
+                '/gallery1.jpeg',
+                '/gallery2.jpeg',
+                '/gallery9.jpeg',
+                '/african kasie.jpeg'
+              ]
+            },
+            {
+              title: 'Awards',
+              images: [
+                '/gallery3.jpeg',
+                '/gallery4.jpeg',
+                '/gallery8.jpeg',
+                '/duku.jpeg'
+              ]
+            }
+          ].map((section, index) => (
+            <div key={index}>
+              <h2 className="text-2xl font-semibold mb-4">{section.title}</h2>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                {section.images.map((img, idx) => (
+                  <img
+                    key={idx}
+                    src={img}
+                    alt={`${section.title} ${idx + 1}`}
+                    style={{ width: '100%', height: '260px', objectFit: 'cover' }}
+                    className="rounded-xl shadow-md hover:scale-105 transition-transform duration-500 cursor-pointer"
+                    onClick={() => openModal(img)}
+                  />
+                ))}
+              </div>
             </div>
-          </div>
-
-          {/* Awards */}
-          <div className="mb-12">
-           
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-              <img
-                src="/gallery3.jpeg"
-                alt="Awards 1"
-                style={{ width: '100%', height: '260px', objectFit: 'cover' }}
-                className="rounded-xl shadow-md hover:scale-105 transition-transform duration-500 cursor-pointer"
-              />
-              <img
-                src="/gallery4.jpeg"
-                alt="Awards 2"
-                style={{ width: '100%', height: '260px', objectFit: 'cover' }}
-                className="rounded-xl shadow-md hover:scale-105 transition-transform duration-500 cursor-pointer"
-              />
-               <img
-                src="/gallery8.jpeg"
-                alt="Events 2"
-                style={{ width: '100%', height: '260px', objectFit: 'cover' }}
-                className="rounded-xl shadow-md hover:scale-105 transition-transform duration-500 cursor-pointer"
-              />
-               <img
-                src="/duku.jpeg"
-                alt="Events 2"
-                style={{ width: '100%', height: '260px', objectFit: 'cover' }}
-                className="rounded-xl shadow-md hover:scale-105 transition-transform duration-500 cursor-pointer"
-              />
-              
-            </div>
-          </div>
-
-          {/* Events */}
-          <div className="mb-12">
-      
-          
-          </div>
-
+          ))}
         </div>
       </section>
+
+      {/* Modal */}
+      {selectedImage && (
+        <div className="fixed inset-0 bg-black bg-opacity-80 z-50 flex items-center justify-center">
+          <div className="relative max-w-3xl w-full p-4">
+            <button
+              onClick={closeModal}
+              className="absolute top-4 right-4 text-white text-2xl font-bold hover:text-red-400 transition"
+            >
+              &times;
+            </button>
+            <img
+              src={selectedImage}
+              alt="Enlarged view"
+              className="w-full h-auto rounded-lg shadow-lg"
+            />
+          </div>
+        </div>
+      )}
 
       {/* Call to Action */}
       <section className="section-padding bg-primary text-white">
         <div className="container-max">
           <div className="text-center max-w-2xl mx-auto animate-fade-in-up">
-            <h2 className="text-3xl font-heading font-bold mb-4">
-              Share Your Moments
-            </h2>
+            <h2 className="text-3xl font-heading font-bold mb-4">Share Your Moments</h2>
             <p className="text-lg text-gray-300 mb-8">
               Have photos from our events or tournaments? We'd love to feature them in our gallery. 
               Connect with us on social media to share your memorable moments.
