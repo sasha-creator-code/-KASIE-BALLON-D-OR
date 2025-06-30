@@ -80,7 +80,7 @@ const News = () => {
                     <span className="bg-gold text-white px-3 py-1 rounded-full text-sm font-semibold animate-pulse">
                       {article.category}
                     </span>
-                    <span className="text-gray-500 text-sm">{article.date}</span>
+              
                   </div>
                   
                   <h2 className="text-2xl font-heading font-bold text-primary mb-4 leading-tight group-hover:text-gold transition-colors">
