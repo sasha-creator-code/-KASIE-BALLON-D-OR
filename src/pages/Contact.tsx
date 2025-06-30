@@ -103,7 +103,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <h4 className="text-lg font-semibold text-primary">Facebook</h4>
-                    <p className="text-gray-600">Kasie Ballon D'Or</p>
+                    <p className="text-gray-600">African Kasie Ballon D'Or</p>
                   </div>
                 </div>
                 

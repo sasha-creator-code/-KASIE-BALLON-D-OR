@@ -30,7 +30,7 @@ const Navbar = () => {
             </div>
             <div className="leading-tight">
               <h1 className="text-white text-lg md:text-xl font-heading font-bold tracking-wide">
-                KASIE BALLON D'OR
+                 AFRICAN KASIE BALLON D'OR
               </h1>
               <p className="text-gold text-xs md:text-sm font-medium">
                 Where Football Stars Are Born

@@ -14,7 +14,7 @@ const Footer = () => {
                 className="h-10 w-10 object-contain"
               />
               <div>
-                <h3 className="text-lg font-heading font-bold">KASIE BALLON D'OR</h3>
+                <h3 className="text-lg font-heading font-bold"> AFRICAN KASIE BALLON D'OR</h3>
                 <p className="text-sm text-gold">Where Football Stars Are Born</p>
               </div>
             </div>
@@ -53,7 +53,7 @@ const Footer = () => {
                 </a>
               </div>
               <p className="text-gray-300 text-sm mt-4">
-                <strong>Facebook:</strong> Kasie Ballon D'Or
+                <strong>Facebook:</strong> African Kasie Ballon D'Or
               </p>
             </div>
           </div>

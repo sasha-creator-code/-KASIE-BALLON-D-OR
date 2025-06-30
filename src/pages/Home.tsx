@@ -16,7 +16,7 @@ const Home = () => {
   <div className="relative container-max section-padding">
     <div className="max-w-4xl animate-fade-in ml-0 md:ml-[-400px]">
       <h1 className="text-4xl md:text-6xl font-heading font-bold mb-6 leading-tight animate-bounce-in">
-        KASIE BALLON D'OR
+         AFRICAN KASIE BALLON D'OR
       </h1>
 
       <p

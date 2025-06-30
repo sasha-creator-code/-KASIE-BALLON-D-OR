@@ -9,7 +9,7 @@ const About = () => {
               About Us
             </h1>
             <p className="text-xl text-gold max-w-3xl mx-auto">
-              Discover the story behind Kasie Ballon D'Or and our mission to elevate township football talent
+              Discover the story behind African Kasie Ballon D'Or and our mission to elevate township football talent
             </p>
           </div>
         </div>
