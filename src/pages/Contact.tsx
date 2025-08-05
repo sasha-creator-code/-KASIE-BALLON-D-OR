@@ -174,20 +174,34 @@ const Contact = () => {
               township football, or someone passionate about developing local talent, we'd love to hear from you.
             </p>
             
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a 
-                href="tel:079 661 9031" 
-                className="btn-secondary text-lg"
-              >
-                Call Barker: 079 661 9031
-              </a>
-              <a 
-                href="#" 
-                className="bg-gold hover:bg-gold-600 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300 text-lg"
-              >
-                Follow Us on Facebook
-              </a>
-            </div>
+           <div className="flex flex-col sm:flex-row gap-4 justify-center">
+  <a 
+    href="tel:079 661 9031" 
+    className="btn-secondary text-lg"
+  >
+    Call Barker: 079 661 9031
+  </a>
+  <a 
+    href="#" 
+    className="bg-gold hover:bg-gold-600 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300 text-lg"
+  >
+    Follow Us on Facebook
+  </a>
+</div>
+
+{/* Email Contact Link */}
+<div className="text-center mt-6">
+  <p className="text-lg text-white">
+    Or email us at:{" "}
+    <a 
+      href="mailto:Afrikasieballondor@gmail.com" 
+      className="underline text-gold hover:text-white"
+    >
+      Afrikasieballondor@gmail.com
+    </a>
+  </p>
+</div>
+
           </div>
         </div>
       </section>
